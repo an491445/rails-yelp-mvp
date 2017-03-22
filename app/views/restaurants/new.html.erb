@@ -2,7 +2,7 @@
 
 <%= simple_form_for (@restaurant) do |f| %>
   <% if @restaurant.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="bg-danger">
       <ul>
       <% @restaurant.errors.full_messages.each do |message| %>
         <li><%= message %></li>
